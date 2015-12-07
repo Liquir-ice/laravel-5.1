@@ -1,0 +1,13 @@
+{
+  "name": "laravel-5.1",
+  "homepage": "https://github.com/Liquir-ice/laravel-5.1.git",
+  "authors": [
+    "tureki <liquirice@gmail.com>"
+  ],
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.0",
+    "jquery": "~2.1.4",
+    "fontawesome": "~4.5.0"
+  }
+}
