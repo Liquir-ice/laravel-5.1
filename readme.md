@@ -1,27 +1,104 @@
-## Laravel PHP Framework
+## Laravel 5.1.26 PHP Framework
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+快速建立一個開發環境
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+----
+## Integration
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+* [Gulp](http://gulpjs.com/)
 
-## Official Documentation
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+## Requirement
 
-## Contributing
+* Linux or OS X
+* PHP 5.4+
+* Node 0.10.0+
+* npm 2.0.0+
+* Composer 1.0+
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+----
+## Code Style
 
-## Security Vulnerabilities
+目前已知的 Guideline，大家務必遵從。
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
-### License
+#### PHP
+* [PSR-2]https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+#### JavaScript
+* [Airbnb]https://github.com/airbnb/javascript
+
+
+#### CSS
+* [PostCSS]https://github.com/postcss/postcss
+
+#### Editor Config
+
+詳細看 http://editorconfig.org
+
+```
+root = true
+
+[*]
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+trim_trailing_white_space_on_save = true
+
+[*.js]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.jade]
+indent_style = space
+indent_size = 2
+```
+
+----
+## Step 1 - Installation
+```bash
+# 修改bower安裝的路徑
+$ vim .bowerrc
+
+# 修改bower安裝的套件
+$ vim bower.json
+
+# 按裝bower
+$ bower install
+
+# 修改package套件等等
+$ vim package.json
+
+# 安裝package裡的套件等
+$ npm install
+
+# 修改composer套件等等
+$ vim composer.json
+
+# 按裝composer
+$ composer install
+```
+
+## Step 2 - Generate key
+```bash
+$ php artisan key:generate
+```
+
+## Step 3 - 執行gulp
+```bash
+# 開啟本機端的開發環境
+$ gulp watch
+
+# 如果是在production的話，記得寫script去執行
+$ gulp --production
+```
+
+
+
