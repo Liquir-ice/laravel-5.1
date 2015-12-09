@@ -41,5 +41,25 @@
                 <div class="title">Laravel 5</div>
             </div>
         </div>
+        @section('header')
+        @show
+
+        @section('content')
+        @show
+
+        @section('footer')
+        @show
+
+        @section('js-footer')
+            @if ( Config::get('app.debug') )
+                <!-- build:js(public) js/all.js -->
+                <script type="text/javascript" src="/vendor/jquery/dist/jquery.min.js"></script>
+                <script type="text/javascript" src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+                <script type="text/javascript" src="/js/commons/commons.js"></script>
+                <!-- endbuild -->
+            @else
+                <script type="text/javascript" src="{{ elixir("js/all.js") }}"></script>
+            @endif
+        @show
     </body>
 </html>
