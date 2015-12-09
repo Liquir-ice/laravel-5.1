@@ -1,5 +1,11 @@
 /vendor
 /node_modules
+/bin
+/bower_components
+/public
 Homestead.yaml
 Homestead.json
 .env
+.DS_Store
+Thumbs.db
+
