@@ -1,6 +1,6 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "liquirice/laravel-5.1",
+    "description": "Laravel 5.1 basic environment setting",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
